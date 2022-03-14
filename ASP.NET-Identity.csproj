@@ -5,4 +5,8 @@
     <RootNamespace>ASP.NET_Identity</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.3" />
+  </ItemGroup>
+
 </Project>
