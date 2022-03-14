@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OSFF1TfBOntxE4QlyXnx4jvncaC/c82hMehLMXPKxd5j4VtneyyhlTMQk3iY1FOXCKaMKbacoPJC9bzBJFpwSQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\filipe.nogueira\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
+  ],
+  "logs": []
+}
