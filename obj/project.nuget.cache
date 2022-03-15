@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zngG7B188EgU60snddSYmLcYzT/YFR+EltPZJ73MJUpyUOh1FhwXoVgSTMJtAaHawJWV+ptAUwGFT8KrQdeqfA==",
+  "dgSpecHash": "LtgKxSMBqnsvys1n4yubv/FOEDpNzlxNftiwCDkuWZt5TEOMxkYjkJRAqTrLxAOYgd0fQX0RIvO0qqE9w7VqfQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj",
+  "projectFilePath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\filipe.nogueira\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\filipe.nogueira\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.12\\microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

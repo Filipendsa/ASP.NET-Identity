@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj": {}
+    "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj": {}
   },
   "projects": {
-    "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj": {
+    "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj",
+        "projectUniqueName": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj",
         "projectName": "ASP.NET-Identity",
-        "projectPath": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj",
+        "projectPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\ASP.NET-Identity\\ASP.NET-Identity.csproj",
         "packagesPath": "C:\\Users\\filipe.nogueira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\filipe.nogueira\\Source\\Repos\\Filipendsa\\ASP.NET-Identity\\obj\\",
+        "outputPath": "C:\\Users\\filipe.nogueira\\source\\repos\\Filipendsa\\ASP.NET-Identity\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\filipe.nogueira\\AppData\\Roaming\\NuGet\\NuGet.Config",
