@@ -9,11 +9,16 @@ namespace ASP.NET_Identity
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
         public IConfiguration Configuration { get; }
+        public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(hostingEnvironment.ContentRootPath)
+                .AddJsonFile("appsettings.json",true,true)
+                .AddJsonFile($"appsettings.{hostingEnvironment.EnvironmentName}.jason", true, true)
+                .AddEnvironmentVariables();
+            Configuration = builder.Build();
+        }
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddIdentityConfig(Configuration);
