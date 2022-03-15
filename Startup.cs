@@ -14,9 +14,10 @@ namespace ASP.NET_Identity
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(hostingEnvironment.ContentRootPath)
-                .AddJsonFile("appsettings.json",true,true)
-                .AddJsonFile($"appsettings.{hostingEnvironment.EnvironmentName}.jason", true, true)
+                .AddJsonFile("appsettings.json", true,true)
+                .AddJsonFile($"appsettings.{hostingEnvironment.EnvironmentName}.json", true, true)
                 .AddEnvironmentVariables();
+
             Configuration = builder.Build();
         }
         public void ConfigureServices(IServiceCollection services)
