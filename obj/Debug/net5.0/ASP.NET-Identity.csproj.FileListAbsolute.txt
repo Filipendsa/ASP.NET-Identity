@@ -165,3 +165,4 @@ C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_Layout.cshtml.g.cs
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Views\Home\Secret.cshtml.g.cs

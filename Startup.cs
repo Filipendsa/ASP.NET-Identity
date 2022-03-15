@@ -1,4 +1,6 @@
 using ASP.NET_Identity.Areas.Identity.Data;
+using ASP.NET_Identity.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,8 +32,19 @@ namespace ASP.NET_Identity
                    options.UseSqlServer(Configuration.GetConnectionString("ASPNET_IdentityContextConnection")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddRoles<IdentityRole>()
                 .AddDefaultUI()
                 .AddEntityFrameworkStores<ASPNET_IdentityContext>();
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("PodeExcluir", policy => policy.RequireClaim("PodeExcluir"));
+
+                options.AddPolicy("PodeLer", policy => policy.AddRequirements(new PermissaoNecessaria("PodeLer")));
+                options.AddPolicy("PodeEscrever", policy => policy.AddRequirements(new PermissaoNecessaria("PodeEscrever")));
+            });
+
+            services.AddSingleton<IAuthorizationHandler, PermissaoNecessariaHandler>();
 
             services.AddControllersWithViews();
         }
