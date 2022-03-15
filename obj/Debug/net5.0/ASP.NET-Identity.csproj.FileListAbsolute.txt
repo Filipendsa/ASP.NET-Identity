@@ -166,3 +166,5 @@ C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Views\Home\Secret.cshtml.g.cs
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\appsettings.Production.json
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\appsettings.Staging.json

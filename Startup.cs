@@ -10,7 +10,7 @@ namespace ASP.NET_Identity
     public class Startup
     {
         public IConfiguration Configuration { get; }
-        public Startup(Microsoft.AspNetCore.Hosting.IHostingEnvironment hostingEnvironment)
+        public Startup(IWebHostEnvironment hostingEnvironment)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(hostingEnvironment.ContentRootPath)
@@ -22,8 +22,9 @@ namespace ASP.NET_Identity
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddIdentityConfig(Configuration);
-            services.AddAuthorizationConfih();
+            services.AddAuthorizationConfig();
             services.ResolveDependencies();
+            
             services.AddControllersWithViews();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

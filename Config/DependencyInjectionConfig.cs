@@ -25,8 +25,9 @@ namespace ASP.NET_Identity.Config
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
+
             services.AddDbContext<ASPNET_IdentityContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("ASPNET_IdentityContextConnection")));
+                options.UseSqlServer(configuration.GetConnectionString(name: "ASPNET_IdentityContextConnection")));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddRoles<IdentityRole>()

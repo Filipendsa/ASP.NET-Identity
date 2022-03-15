@@ -5,7 +5,7 @@ namespace ASP.NET_Identity.Config
 {
     public static class IdentityConfig
     {
-        public static IServiceCollection AddAuthorizationConfih(this IServiceCollection services)
+        public static IServiceCollection AddAuthorizationConfig(this IServiceCollection services)
         {
             services.AddAuthorization(options =>
             {
