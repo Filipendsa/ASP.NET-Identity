@@ -4,11 +4,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using static ASP.NET_Identity.Extensions.CustomAuthorization;
 
 namespace ASP.NET_Identity.Controllers
 {
@@ -29,13 +24,20 @@ namespace ASP.NET_Identity.Controllers
 
         public IActionResult Privacy()
         {
-            throw new Exception("Erro");
             return View();
         }
 
         [Authorize(Roles = "Admin, Gestor")]
         public IActionResult Secret()
         {
+            try
+            {
+                throw new Exception("Algo não Legal Aconteceu!");
+            }catch (Exception e)
+            {
+                _logger.LogError("Exception information: {0}", e);
+                throw;
+            }
             return View();
         }
 
@@ -57,7 +59,7 @@ namespace ASP.NET_Identity.Controllers
             return View("Secret");
         }
 
-        //[Route("erro/{id:lenght(3,3)}")]
+        [Route("erro/{id:length(3,3)}")]
         public IActionResult Error(int Id)
         {
             var modelErro = new ErrorViewModel();
