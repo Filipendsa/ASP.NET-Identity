@@ -168,3 +168,8 @@ C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\obj\Debug\net5.0\Razor\Views\Home\Secret.cshtml.g.cs
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\appsettings.Production.json
 C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\appsettings.Staging.json
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\KissLog.dll
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\KissLog.AspNetCore.dll
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\KissLog.CloudListeners.dll
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\KissLog.RestClient.dll
+C:\Users\filipe.nogueira\source\repos\Filipendsa\ASP.NET-Identity\bin\Debug\net5.0\System.Text.Json.dll
