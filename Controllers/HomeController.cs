@@ -29,6 +29,7 @@ namespace ASP.NET_Identity.Controllers
 
         public IActionResult Privacy()
         {
+            throw new Exception("Erro");
             return View();
         }
 
@@ -56,10 +57,34 @@ namespace ASP.NET_Identity.Controllers
             return View("Secret");
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [Route("erro/{id:lenght(3,3)}")]
+        public IActionResult Error(int Id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var modelErro = new ErrorViewModel();
+
+            if (Id == 500)
+            {
+                modelErro.Mensagem = "Ocorreu um erro! Tente Novamente mais Tarde ou Contate nosso Suporte.";
+                modelErro.Titulo = "Ocorreu um Erro";
+                modelErro.ErrorCode = Id;
+            }
+            else if (Id == 404)
+            {
+                modelErro.Mensagem = "A Página que está Procurando não Existe! <br />Cheque o URL Inserido, Caso haja Dúvdas, Consulte nosso Suporte..";
+                modelErro.Titulo = "Ops! Página não Encontrada";
+                modelErro.ErrorCode = Id;
+            }
+            else if (Id == 403)
+            {
+                modelErro.Mensagem = "Oops! Parece que Você NÃO tem Permissão para Fazer Isto ";
+                modelErro.Titulo = "Acesso Negado";
+                modelErro.ErrorCode = Id;
+            }
+            else 
+            {
+                return StatusCode(500);
+            }
+            return View("Error", modelErro);
         }
     }
 }
