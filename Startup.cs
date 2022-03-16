@@ -1,4 +1,5 @@
 using ASP.NET_Identity.Config;
+using KissLog.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -53,6 +54,7 @@ namespace ASP.NET_Identity
 
             app.UseAuthentication();
             app.UseAuthorization();
+            app.UseKissLogMiddleware(options => LogConfig.ConfigureKissLog(options,Configuration));
 
             app.UseEndpoints(endpoints =>
             {
