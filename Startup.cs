@@ -18,6 +18,11 @@ namespace ASP.NET_Identity
                 .AddJsonFile($"appsettings.{hostingEnvironment.EnvironmentName}.json", true, true)
                 .AddEnvironmentVariables();
 
+            if (hostingEnvironment.IsProduction())
+            {
+                builder.AddUserSecrets<Startup>();
+            }
+
             Configuration = builder.Build();
         }
         public void ConfigureServices(IServiceCollection services)

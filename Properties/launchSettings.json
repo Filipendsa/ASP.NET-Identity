@@ -33,8 +33,6 @@
     },
 
     "Sef Hosting": {
-      : null,
-      : null,
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,

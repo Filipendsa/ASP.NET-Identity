@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <RootNamespace>ASP.NET_Identity</RootNamespace>
+    <UserSecretsId>7c0dd0ae-8fa8-4cd5-9ca7-676b45c1c7ca</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
