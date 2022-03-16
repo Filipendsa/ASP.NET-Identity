@@ -57,7 +57,7 @@ namespace ASP.NET_Identity.Controllers
             return View("Secret");
         }
 
-        [Route("erro/{id:lenght(3,3)}")]
+        //[Route("erro/{id:lenght(3,3)}")]
         public IActionResult Error(int Id)
         {
             var modelErro = new ErrorViewModel();
