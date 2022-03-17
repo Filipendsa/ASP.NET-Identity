@@ -1,4 +1,5 @@
 using ASP.NET_Identity.Config;
+using ASP.NET_Identity.Extensions;
 using KissLog.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,7 +32,11 @@ namespace ASP.NET_Identity
             services.AddIdentityConfig(Configuration);
             services.AddAuthorizationConfig();
             services.ResolveDependencies();
-            
+            //services.AddMvc(options =>
+            //{
+            //    options.Filters.Add(typeof(AuditoriaFilter));
+            //}).SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Latest);
+
             services.AddControllersWithViews();
         }
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
